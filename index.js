@@ -87,7 +87,7 @@ class Car {
     this.tank = this.tank + gallons;
   }
   drive(dist) {
-    const drivableMiles = this.tank + this.milesPerGallon;
+    const drivableMiles = this.tank * this.milesPerGallon;
     if (dist <= drivableMiles) {
       this.odometer = this.odometer + dist;
       this.tank = this.tank - (dist / this.milesPerGallon);
